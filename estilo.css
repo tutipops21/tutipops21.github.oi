@@ -1,0 +1,509 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+  }
+  body {
+    font-family: sans-serif;
+    margin-top: 80px;
+  }
+  .header {
+    position: relative;
+    background: linear-gradient(to bottom, #000000, #2b2929);
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    ;
+    max-width: 992px;
+    margin: 0 auto;
+  }
+  .nav-link {
+    color: white;
+    text-decoration: none;
+  }
+  .logo {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+  }
+  .nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+  }
+  .nav-menu-item {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+  }
+  .nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 5px;
+  }
+  .nav-menu-link:hover,
+  .nav-menu-link_active {
+    animation: changeColor 2s infinite;
+    color: #83c5f7;
+  }
+  @keyframes changeColor {
+    0% {
+        box-shadow: inset 0 0 30px rgb(255, 0, 0);
+      background-color: rgb(255, 0, 0); 
+      font-style: bold;
+    }
+    25% {
+        box-shadow: inset 0 0 30px rgb(0, 255, 0);
+        font-style: bold;
+    }
+    50% {
+        box-shadow: inset 0 0 30px rgb(0, 0, 255); 
+        font-style: bold;
+    }
+    75% {
+        box-shadow: inset 0 0 30px rgb(255, 255, 0); 
+        font-style: bold;
+    }
+    100% {
+        box-shadow: inset 0 0 30px rgb(255, 0, 255); 
+        font-style: bold;
+    }
+  }
+  @keyframes changeBorderColor {
+    0% {
+        box-shadow: inset 0 0 30px rgba(10, 131, 168, 1); 
+    }
+    25% {
+        box-shadow: inset 0 0 30px rgba(77, 5, 71, 1); 
+    }
+    50% {
+        box-shadow: inset 0 0 30px rgba(221, 255, 3, 1);
+    }
+    75% {
+        box-shadow: inset 0 0 30px rgba(236, 19, 19, 1); 
+    }
+    100% {
+        box-shadow: inset 0 0 30px rgba(255, 0, 255, 1);
+    }
+}
+@keyframes changeBorderColor1 {
+    0% {
+        box-shadow: inset 0 0 40px rgba(10, 131, 168, 1);
+    }
+    25% {
+        box-shadow: inset 0 0 40px rgba(77, 5, 71, 1);
+    }
+    50% {
+        box-shadow: inset 0 0 40px rgba(221, 255, 3, 1);
+    }
+    75% {
+        box-shadow: inset 0 0 40px rgba(236, 19, 19, 1);
+    }
+    100% {
+        box-shadow: inset 0 0 40px rgba(255, 0, 255, 1); 
+    }
+}
+@keyframes changeBorderColor2 {
+    0% {
+        box-shadow: inset 0 0 40px rgba(77, 5, 71, 1);
+    }
+    25% {
+        box-shadow: inset 0 0 40px rgba(236, 19, 19, 1);  
+    }
+    50% {
+        box-shadow: inset 0 0 40px rgba(255, 0, 255, 1); 
+    }
+    75% {
+        box-shadow: inset 0 0 40px rgba(10, 131, 168, 1);    
+    }
+    100% {
+        box-shadow: inset 0 0 40px rgba(221, 255, 3, 1);
+    }
+}
+  .nav-toggle {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    
+    line-height: 60px;
+    cursor: pointer;
+  
+    display: none;
+  }
+ .Blog {
+    position: relative;
+    margin-top: 80px;
+    height: 750px;
+    width: 100%; 
+    background-color: #000000; 
+    background-size: cover;
+    animation: changeBorderColor 4s infinite;
+}
+.SobreMi {
+    position: relative;
+    height: 1300px;
+    width: 100%; 
+    background-color: #000000; 
+    background-size: cover;
+    animation: changeBorderColor2 4s infinite;
+}
+.image{
+    position:absolute;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+img{
+    height: 400px;
+    width: 400px;
+}
+img .Dom{
+    height: 100px;
+    width: 100px;
+}
+h2{
+    color: #ffffff;
+    font-size: 45px;
+}
+.texto{
+    margin-left: 50%;
+    margin-top: 5%;
+    position: absolute;
+    color: #ffffff;
+}
+.Unidad1{
+    margin-left: 5%;
+    margin-top: 45%;
+    position: absolute;
+    color: #ffffff;
+}
+.Unidad2{
+    margin-left: 5%;
+    margin-top: 65%;
+    position: absolute;
+    color: #ffffff;
+}
+.texto1{
+    font-size: 34px;
+    margin-right: 5%;
+    margin-left: 40%;
+    margin-top: 15%;
+    position: absolute;
+    color: #ffffff;
+    text-align: justify;
+}
+.texto2{
+    z-index: 2;
+position: absolute;
+color: #ffffff;
+margin-top:10% ;
+margin-left: 5%;
+margin-right: 5%;
+text-align: justify;
+font-size: 24px;
+}
+.texto3{
+    position: absolute;
+color: #ffffff;
+margin-left: 25%;
+margin-right: 25%;
+margin-top: 4%;
+}
+.texto4{
+    font-size: 32px;
+    margin-right: 5%;
+    margin-left: 35%;
+    margin-top: 45%;
+    position: absolute;
+    color: #ffffff;
+    text-align: justify;
+}
+.texto5{
+    font-size: 32px;
+    margin-right: 5%;
+    margin-left: 35%;
+    margin-top: 65%;
+    position: absolute;
+    color: #ffffff;
+    text-align: justify;
+}
+.Acerca  {
+    position: relative;
+    height: 600px;
+    width: 100%; 
+    background: linear-gradient(to bottom, #000000, #2b2929);
+}
+.Portafolio {
+    position: relative;
+    height: 700px;
+    width: 100%;
+    background-color: #000000;
+}
+.Portafolio button{
+    margin: 40px;
+    background-color: #000000;
+    font-size: 60px;
+}
+.Portafolio button:hover{
+    margin: 40px;
+}
+.cont1 {
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 10%;
+}
+.cont2 {
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 40%;
+}
+.cont3 {
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 68%;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+a:hover {
+    color: aqua;
+    scale: 1.1;
+}
+button {
+    text-decoration: none;
+    border-radius: 5px;
+    border: 5px; 
+    padding: 10px 20px; 
+    font-size: 16px;
+    text-decoration: none; 
+    cursor: pointer; 
+    animation: changeBorderColor1 4s infinite;
+  }
+  button:hover {
+    transform: scale(1.1);
+  }
+  /* MOBILE */
+   /* MOBILE */
+
+
+
+
+
+
+
+
+
+   @media (max-width: 990px) {
+    button {
+        align-items: center;
+        text-decoration: none;
+        border-radius: 5px;
+        border: 5px; 
+        font-size: 5px;
+        text-decoration: none; 
+        cursor: pointer; 
+        animation: changeBorderColor1 4s infinite;
+        display: block;
+        width: max-content;
+      }
+    .Portafolio button {
+        margin: 20px 20px; 
+        display: block;
+        font-size: 45px;
+        align-items: center;
+      }
+ .Blog {
+    position: relative;
+    margin-top: 80px;
+    height: 980px;
+    width: 100%; 
+    background-color: #000000; 
+    background-size: cover;
+    
+    animation: changeBorderColor 4s infinite;
+}
+h2{
+    color: #ffffff;
+}
+
+.image{
+    position:absolute;
+    margin-top: 15%;
+    margin-left: 25%;
+}
+img{
+    height: 200px;
+    width: 200px;
+}
+h2{
+    color: #ffffff;
+    font-size: 35px;
+}
+.texto{
+    margin-left: 20%;
+    margin-top: 70%;
+    position: absolute;
+    color: #ffffff;
+}
+.Unidad1{
+    margin-left: 30%;
+    margin-top: 240%;
+    position: absolute;
+    color: #ffffff;
+}
+.Unidad2{
+    margin-left: 30%;
+    margin-top: 360%;
+    position: absolute;
+    color: #ffffff;
+}
+.texto1{
+    font-size: 18px;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 105%;
+    position: absolute;
+    color: #ffffff;
+    text-align: justify;
+}
+.texto4{
+    font-size: 18px;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 270%;
+    position: absolute;
+    color: #ffffff;
+    text-align: justify;
+}
+.texto5{
+    font-size: 18px;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 385%;
+    position: absolute;
+    color: #ffffff;
+    text-align: justify;
+}
+.Acerca  {
+    z-index: -1;
+    position: relative;
+    height: 880px;
+    width: 100%; 
+    background: linear-gradient(to bottom, #000000, #2b2929);
+}
+.SobreMi {
+    position: relative;
+    height: 1900px;
+    width: 100%; 
+    background-color: #000000; 
+    background-size: cover;
+    animation: changeBorderColor2 4s infinite;
+}
+.texto2{
+    z-index: 2;
+position: absolute;
+color: #ffffff;
+margin-top:40% ;
+margin-left: 5%;
+margin-right: 5%;
+text-align: justify;
+font-size: 18px;
+}
+.texto3{
+    position: absolute;
+color: #ffffff;
+margin-left: 5%;
+margin-right: 5%;
+margin-top: 8%;
+}
+.particles-container{
+    z-index: -1;
+}
+.texto2{
+    z-index: 1;
+}
+.Portafolio {
+    align-items: center;
+    position: relative;
+    height: 780px;
+    width: 100%;
+    background-color: #000000;
+    
+}
+.cont1 {
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+.cont2 {
+    position: absolute;
+    margin-top: 75%;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+.cont3 {
+    position: absolute;
+    margin-top: 130%;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+    .header {
+      height: 80px;
+    }
+  
+    .logo {
+      font-size: 25px;
+      padding: 0 20px;
+      line-height: 60px;
+    }
+  
+    .nav-menu {
+        position: relative;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      background-color: #060606;
+      position: fixed;
+      top: 60px;
+      width: 100%;
+      padding: 20px 0;
+  
+      height: calc(100% - 60px);
+      overflow-y: auto;
+  
+      left: 100%;
+      transition: left 0.3s;
+    }
+  
+    .nav-menu-item {
+      line-height: 70px;
+    }
+  
+    .nav-menu-link:hover,
+    .nav-menu-link_active {
+      background: none;
+      color: #83c5f7;
+    }
+  
+    .nav-toggle {
+      display: block;
+    }
+  
+    .nav-menu_visible {
+      left: 0;
+    }
+    .nav-toggle:focus:not(:focus-visible) {
+      outline: none;
+    }
+  }
